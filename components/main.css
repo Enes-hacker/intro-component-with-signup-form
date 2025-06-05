@@ -1,6 +1,6 @@
 body{
     background-color: var(--clr-primary-red);
-    background-image: url('/images/bg-intro-desktop.png');
+    background-image: url('images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-position: center;
     display: grid;
@@ -13,7 +13,7 @@ body{
 
 @media (max-width: 768px) {
     body {
-        background-image: url('/images/bg-intro-mobile.png');
+        background-image: url('images/bg-intro-mobile.png');
         background-size: cover;
         background-position: center;
     }
@@ -25,6 +25,10 @@ body{
 
     .form__wrapper {
         margin-inline: 18px;
+    }
+
+    .form__section{
+       margin-top: 64px;
     }
 
     .form{
