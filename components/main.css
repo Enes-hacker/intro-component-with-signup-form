@@ -140,3 +140,31 @@ input:focus{
     }
 }
 /*FORM SECTION*/
+
+/* Errors */
+.form__input {
+    position: relative;
+
+}
+
+.form__input.error input {
+    border-color: var(--clr-primary-red);
+}
+
+.form__input.error::after {
+    content: url('../images/icon-error.svg'); /* Adjusted path */
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Adjusted for input padding (2rem on the right) */
+    bottom: -0.5rem;
+    transform: translateY(-50%);
+}
+
+.error__text {
+    color: var(--clr-primary-red);
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
